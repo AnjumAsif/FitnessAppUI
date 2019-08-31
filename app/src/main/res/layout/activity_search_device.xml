@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wm.rippledevicesearch.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentRipple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:rb_color="@color/colorPrimary"
+    app:rb_duration="3000"
+    app:rb_radius="32dp"
+    app:rb_rippleAmount="4"
+    app:rb_scale="6"
+    tools:context=".ui.ui.SearchDeviceActivity">
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/phone2" />
+
+    <ImageView
+        android:id="@+id/foundDevice"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_above="@id/centerImage"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@id/centerImage"
+        android:src="@drawable/phone2"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonSelectDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_theme_color_background"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:text="Select Device"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+    </FrameLayout>
+
+</com.wm.rippledevicesearch.RippleBackground>
