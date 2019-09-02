@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -49,6 +50,16 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp"
                 android:textStyle="normal" />
+            <com.wm.circularprogressbar.CircleProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundColor="@color/colorAccent"
+                app:progressTextColor="@color/colorLightPink"
+                app:cpb_progress="30"
+                app:cpb_background_progressbar_color="@color/colorPrimary"
+                app:roundedCorners="true"
+                app:textSize="18sp" />
         </LinearLayout>
 
     </ScrollView>
